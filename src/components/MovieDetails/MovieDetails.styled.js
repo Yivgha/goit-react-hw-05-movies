@@ -4,7 +4,7 @@ export const Section = styled.div`
   display: flex;
   width: 1200;
   margin: 0 auto;
-  padding: 10px;
+  padding: 15px;
   border: 2px solid #f5f5f5;
   background: white;
   font-family: 'Open Sans';
@@ -23,18 +23,16 @@ export const ListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
   width: 600px;
 `;
 
 export const TitleOption = styled.p`
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 2px solid #f5f5f5;
 `;
 
 export const TextOption = styled.p`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  font-style: italic;
 `;

@@ -61,7 +61,7 @@ const genres = {
   },
   10770: {
     en: 'TV Movie',
-    uk: 'ТВ фільм',
+    uk: 'ТБ фільм',
   },
   53: {
     en: 'Thriller',

@@ -14,12 +14,11 @@ export const Review = styled.li`
 
 export const Name = styled.h3`
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 `;
 
 export const Text = styled.p`
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 15px;
   font-style: italic;
 `;

@@ -16,7 +16,8 @@ import {
 export const MovieDetails = () => {
   const [movie, setMovie] = useState([]);
   const { movieId } = useParams();
-  const { title, poster_path, popularity, overview, genres } = movie;
+  const { title, poster_path, vote_average, overview, genres } = movie;
+ 
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -51,14 +52,15 @@ export const MovieDetails = () => {
             <ListWrapper>
               <h1>{title}</h1>
               <TitleOption>User score:</TitleOption>
-              <TextOption> {Math.floor(popularity)}%</TextOption>
+              <TextOption> { Math.floor(vote_average * 10) }%</TextOption>
               <TitleOption>Overview: </TitleOption>
               <TextOption>{overview}</TextOption>
-              <TitleOption>Ganres:</TitleOption>
+              <TitleOption>Genres:</TitleOption>
               <TextOption> {getGenres(genres)}</TextOption>
             </ListWrapper>
           </Section>
           <List>
+            <h3>Additional information:</h3>
             <li>
               <Links
                 to="cast"
@@ -74,9 +76,7 @@ export const MovieDetails = () => {
                 to="reviews"
                 state={{
                   from: search.current ? `/movies${search.current}` : '/',
-                }}
-              >
-                {' '}
+                }}>
                 Reviews
               </Links>
             </li>
@@ -86,4 +86,4 @@ export const MovieDetails = () => {
       )}
     </>
   );
-};
+}

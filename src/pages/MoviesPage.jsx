@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import { FcSearch } from 'react-icons/fc';
+import { BsSearch } from 'react-icons/bs';
 import { MoviesList } from '../components/MoviesList';
 import { SearchMovie } from 'service/Api';
 import { Form, Btn, Input } from './Pages.styled';
@@ -45,7 +45,7 @@ export const MoviePage = () => {
       <Form onSubmit={onSubmitForm}>
         <Input type="search" name={query} onChange={handelInputChange} />
         <Btn type="submit">
-          <FcSearch />
+          <BsSearch />
         </Btn>
       </Form>
       <MoviesList movies={movies} />

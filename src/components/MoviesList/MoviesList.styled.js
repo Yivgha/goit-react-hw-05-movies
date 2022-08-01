@@ -5,18 +5,14 @@ export const FilmItem = styled(Link)`
   font-size: 20px;
   color: darkslategray;
   transition: 0.3s ease-in;
+  text-decoration: underline;
   &:hover {
-    background: rgb(163, 226, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(163, 226, 255, 0.8281687675070029) 36%,
-      rgba(245, 250, 148, 0.6152836134453781) 69%
-    );
+    background: rgb(66, 135, 245);
   }
 `;
 
 export const FilmList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 `;

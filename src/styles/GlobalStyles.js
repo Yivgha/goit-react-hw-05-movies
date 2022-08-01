@@ -27,8 +27,8 @@ export const GlobalStyles = css`
   ul,
   ol {
     list-style: none;
-    padding-left: 0;
-    margin: 0;
+    padding-left: 5px;
+    margin: 0 0 0 5px;
   }
   img {
     display: block;

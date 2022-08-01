@@ -10,7 +10,7 @@ export const HomePage = () => {
   },[]);
   return (
     <>
-      <h1>Trending today</h1>
+      <h1>Trending today:</h1>
       <MoviesList movies={movies} />
     </>
   );

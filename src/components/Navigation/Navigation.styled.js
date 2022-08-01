@@ -15,11 +15,10 @@ export const StyledLink = styled(NavLink)`
   color: black;
   font-weight: 500;
   &.active {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(43, 188, 255);
+  }
+  &:hover {
     background: rgb(163, 226, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(163, 226, 255, 0.8281687675070029) 36%,
-      rgba(245, 250, 148, 0.6152836134453781) 69%
-    );
   }
 `;

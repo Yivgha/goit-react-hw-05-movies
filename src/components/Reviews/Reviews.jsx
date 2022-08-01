@@ -19,12 +19,12 @@ export const Reviews = () => {
 
   return (
     <ReviewList>
-      {movies.length === 0 && <h1>no reviews</h1>}
-      {movies.map(({ author, content, id }) => (
+      {movies.length === 0 && <h1>No reviews yet. Be first to write it!</h1>}
+      {movies.map(({ author, content, id}) => (
         <Review key={id}>
-          <Name>Author: {author}</Name>
+          <Name>Author:{author}</Name>
           <h3>Review:</h3>
-          <Text>{content}</Text>
+          <Text>"{content}"</Text>
         </Review>
       ))}
     </ReviewList>

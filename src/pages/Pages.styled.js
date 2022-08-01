@@ -1,47 +1,55 @@
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-export const Links = styled(Link)`
+export const Links = styled(NavLink)`
 background: rgb(163, 226, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(163, 226, 255, 0.8281687675070029) 36%,
-    rgba(245, 250, 148, 0.6152836134453781) 69%
-  );
-  border: 2px solid #eee;
-  height: 22px;
-  width: 100px;
-  padding: 3px;
+font-size: 15px;
+font-weight: 500;
+  border: 2px solid #f5f5f5;
+  display: flex;
+  padding: 8px 12px;
+  width: 60px;
+  border-radius: 4px;
   overflow: hidden;
-  display: block;
-  transition: All 0.5s ease;
-  border-radius: 5px;
-  &:hover {
+  justify-content: space-evenly;
+  align-items: center;
+  transition: All 0.3s ease;
+  &.active {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
     background: rgb(43, 188, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(43, 188, 255, 0.8281687675070029) 36%,
-      rgba(246, 232, 84, 0.6152836134453781) 69%
-    );
-  }`;
+  }
+  &:hover {
+    background: rgb(163, 226, 255);
+  }
+`;
 
 export const List = styled.ul`
   display: flex;
  flex-direction: column;
  padding:  10px;
- gap: 10px;
+ gap: 5px;
  `;
 
 export const Form = styled.form`
  margin-bottom: 20px;
   margin-top: 20px;
+  display: flex;
+  outline: none;
   `;
 
 export const Btn = styled.button`
 margin-left:10px;
-font-size:16px;
-padding:3px;
+width: 30px;
+height: 30px;
+  display: block;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  background: rgb(163, 226, 255);
+  &:hover {
+   
+    background: rgb(43, 188, 255);
+  }
 `;
 
 export const Input = styled.input`

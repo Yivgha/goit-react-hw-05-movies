@@ -3,13 +3,13 @@ import styled from '@emotion/styled';
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 15px;
 `;
 
 export const Item = styled.li`
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 150px;
   text-align: center;
   margin: 0 auto;
   padding: 5px;
@@ -22,7 +22,6 @@ export const Item = styled.li`
 export const Title = styled.p`
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 2px solid #f5f5f5;
 `;
 
 export const Image = styled.img`
@@ -30,7 +29,6 @@ export const Image = styled.img`
 `;
 
 export const Info = styled.p`
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
   font-style: italic;
 `;

@@ -1,5 +1,11 @@
-import { Link } from "react-router-dom";
+import { LinkBackStyle, BtnBack} from "./BackLink.styled";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 export const BackLink = ({href}) => {
-    return <Link to={href}>Back</Link>
+    return (
+
+    <BtnBack type="submit"> 
+        <AiOutlineArrowLeft  /><LinkBackStyle to={href}>Go back</LinkBackStyle>
+    </BtnBack>
+  )
 }

@@ -19,8 +19,8 @@ export const Cast = () => {
 
   return (
     <List>
-      {errors && <div>NOT FOUND</div>}
-      {movies.length === 0 && <h1>no info</h1>}
+      {errors && <div>Not Found</div>}
+      {movies.length === 0 && <h1>No info</h1>}
       {movies.map(
         ({ profile_path, character, name, id }) =>
           !!profile_path && (
